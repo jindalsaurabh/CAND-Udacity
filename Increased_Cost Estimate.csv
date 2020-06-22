@@ -1,0 +1,17 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Amazon RDS for MySQL,0,11689.12,140269.44,USD,"Quantity (4), Storage for each RDS instance (Provisioned IOPS SSD (io1)), Storage amount (1000 GB), Provisioning IOPS (1000), Additional backup storage (20000 GB)"
+My Estimate,US East (N. Virginia),Elastic Load Balancing,0,629.63,7555.56,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Elastic Load Balancing,0,344.93,4139.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (40 GB per hour), Average number of new TCP connections (15000 per second), Processed bytes per NLB for UDP (15 GB per hour), Average number of new UDP Flows (5000 per second), Processed bytes per NLB for TLS (5 GB per hour), Average number of new TLS connections (1000 per second)"
+My Estimate,US East (N. Virginia),Amazon EC2,0,2536,30432,USD,"Operating system (Linux), Quantity (4), Storage for each EC2 instance (Provisioned IOPS SSD (io1)), Storage amount (400 GB), Instance type (m4.4xlarge)"
+My Estimate,US East (N. Virginia),Amazon Elastic IP,0,15,180,USD,"Number of EC2 instances (4), Number of EIPs per instance (1), Number of EIP remaps (4)"
+My Estimate,US East (N. Virginia),S3 Standard,0,1757.5,21090,USD,S3 Standard storage (50000 GB per month)
+My Estimate,US East (N. Virginia),Data Transfer,0,0,0,USD," Inbound (from: Not selected) 0 TB per month  Outbound (to: Not selected) 0 TB per month "
+My Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,1832.85,21994.2,USD,Number of NAT Gateways (1)
+,,,,,,,
+"AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,
+,,,,,,,
+Notes:,,,,,,,
+Increased number of RDS instances from 2 to 4. The extra instances to be used as Multi-AZ read replicas¾for enhanced read performance and increased availability.,,,,,,,
+"Changed the storage from GP to Provisioned IOPS, to reduce latency. And also added Backup Storage of 20k GBs for¾automated database backups.",,,,,,,
+EC2 instances upgraded to¾m4.4xlarge - to improve application performance.,,,,,,,
+Increased the traffic throughput for the load balancers and NAT Gateway to introduce enhanced redundancy.¾,,,,,,,
